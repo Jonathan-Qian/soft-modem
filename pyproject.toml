@@ -1,0 +1,28 @@
+[project]
+name = "soft-modem"
+version = "0.1.0"
+description = "C++ software modem with Python RF and Sionna channel simulation"
+readme = "README.md"
+authors = [
+    { name = "Jonathan Qian", email = "jonathanhqian1@gmail.com" }
+]
+requires-python = ">=3.11, <3.13" 
+dependencies = [
+    "ipykernel>=7.3.0",
+    "matplotlib>=3.11.2",
+    "sionna>=2.1.0",
+    "sionna-rt-gui>=0.1.1",
+    "torch>=2.14.0",
+    "torchaudio>=2.11.0",
+    "torchvision>=0.29.0",
+]
+
+[[tool.uv.index]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true
+
+[tool.uv.sources]
+torch = { index = "pytorch-cpu" }
+torchvision = { index = "pytorch-cpu" }
+torchaudio = { index = "pytorch-cpu" }
