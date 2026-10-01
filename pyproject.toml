@@ -1,7 +1,7 @@
 [project]
 name = "soft-modem"
 version = "0.1.0"
-description = "C++ software modem with Python RF and Sionna channel simulation"
+description = "Python and Sionna RF and channel simulation"
 readme = "README.md"
 authors = [
     { name = "Jonathan Qian", email = "jonathanhqian1@gmail.com" }
